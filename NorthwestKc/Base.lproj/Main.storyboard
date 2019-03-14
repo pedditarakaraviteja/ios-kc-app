@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gtM-3d-aeh" kind="presentation" id="eLH-ZC-Jhw"/>
+                                    <segue destination="bzn-Hk-0Ry" kind="show" id="bK7-DV-vfU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,7 +53,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Schools" id="H5R-hE-hIj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Kl-7p-xdf"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Kl-7p-xdf">
+                            <connections>
+                                <segue destination="gtM-3d-aeh" kind="presentation" id="YI5-LG-mgC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZH-6f-fnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -80,6 +84,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hvE-kl-3ew" kind="show" id="tLf-aK-2vH"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -88,8 +95,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GKe-ad-cqB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Teams" id="dDE-c0-VV4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RbU-PV-faH"/>
+                    <navigationItem key="navigationItem" title="Teams" id="AVI-Ao-8bg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="Byq-aM-lOv">
+                            <connections>
+                                <segue destination="Rxn-Dd-66C" kind="presentation" id="R3r-fL-m6l"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzB-qX-uqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,7 +246,7 @@
             </objects>
             <point key="canvasLocation" x="3045.5999999999999" y="-159.67016491754123"/>
         </scene>
-        <!--Team-->
+        <!--Students-->
         <scene sceneID="1sS-qU-sj8">
             <objects>
                 <viewController id="hvE-kl-3ew" sceneMemberID="viewController">
@@ -296,7 +307,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OgN-rg-3Y5"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Team" id="Vua-bx-PuU"/>
+                    <navigationItem key="navigationItem" title="Students" id="Vua-bx-PuU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5N-HF-DbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
