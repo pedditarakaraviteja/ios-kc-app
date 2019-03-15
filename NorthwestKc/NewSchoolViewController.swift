@@ -10,14 +10,17 @@ import UIKit
 
 class NewSchoolViewController: UIViewController {
 
+    
     @IBOutlet weak var nameTF: UITextField!
+    
+    
+    
     
     @IBOutlet weak var coachTF: UITextField!
     
-    
     @IBAction func cancelBTN(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }//end of cancelBTN method
+    }
     
     
     @IBAction func doneBTN(_ sender: Any) {
@@ -30,7 +33,7 @@ class NewSchoolViewController: UIViewController {
             displayMessage()
         }
         
-    }//end of doneBTN method
+    }
     
     func displayMessage(){
         let alert = UIAlertController(title: "Warning",

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9C40859223B0DE300D24A37 /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C40858223B0DE300D24A37 /* Schools.swift */; };
+		3F4522B0223B2E9C00527132 /* Schools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4522AF223B2E9C00527132 /* Schools.swift */; };
 		F9C4085B223B0EAC00D24A37 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4085A223B0EAC00D24A37 /* TeamsTableViewController.swift */; };
 		F9C4085D223B0EED00D24A37 /* NewTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4085C223B0EED00D24A37 /* NewTeamViewController.swift */; };
 		F9C4085F223B0F4100D24A37 /* NewSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4085E223B0F4100D24A37 /* NewSchoolViewController.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F9C40858223B0DE300D24A37 /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Schools.swift; path = ../../Schools.swift; sourceTree = "<group>"; };
+		3F4522AF223B2E9C00527132 /* Schools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schools.swift; sourceTree = "<group>"; };
 		F9C4085A223B0EAC00D24A37 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
 		F9C4085C223B0EED00D24A37 /* NewTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeamViewController.swift; sourceTree = "<group>"; };
 		F9C4085E223B0F4100D24A37 /* NewSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolViewController.swift; sourceTree = "<group>"; };
@@ -115,12 +115,12 @@
 				F9F38F9B2239AAD000DF65FF /* Main.storyboard */,
 				F9F38F9E2239AAD100DF65FF /* Assets.xcassets */,
 				F9F38FA02239AAD100DF65FF /* LaunchScreen.storyboard */,
-				F9C40858223B0DE300D24A37 /* Schools.swift */,
 				F9F38FA32239AAD100DF65FF /* Info.plist */,
 				F9C4085A223B0EAC00D24A37 /* TeamsTableViewController.swift */,
 				F9C4085C223B0EED00D24A37 /* NewTeamViewController.swift */,
 				F9C40862223B100900D24A37 /* StudentsViewController.swift */,
 				F9C40864223B110C00D24A37 /* SchoolsTableViewController.swift */,
+				3F4522AF223B2E9C00527132 /* Schools.swift */,
 			);
 			path = NorthwestKc;
 			sourceTree = "<group>";
@@ -277,7 +277,7 @@
 				F9C40863223B100900D24A37 /* StudentsViewController.swift in Sources */,
 				F9F38F9A2239AAD000DF65FF /* ViewController.swift in Sources */,
 				F9C40865223B110C00D24A37 /* SchoolsTableViewController.swift in Sources */,
-				F9C40859223B0DE300D24A37 /* Schools.swift in Sources */,
+				3F4522B0223B2E9C00527132 /* Schools.swift in Sources */,
 				F9C4085D223B0EED00D24A37 /* NewTeamViewController.swift in Sources */,
 				F9C4085F223B0F4100D24A37 /* NewSchoolViewController.swift in Sources */,
 				F9C4085B223B0EAC00D24A37 /* TeamsTableViewController.swift in Sources */,

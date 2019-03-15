@@ -13,9 +13,12 @@ class StudentsViewController: UIViewController {
     var students:Team?
     
     
+    
     @IBOutlet weak var student0LBL: UILabel!
     
+    
     @IBOutlet weak var student1LBL: UILabel!
+    
     
     @IBOutlet weak var student2LBL: UILabel!
     
