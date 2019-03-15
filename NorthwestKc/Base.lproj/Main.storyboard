@@ -43,7 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bzn-Hk-0Ry" kind="show" id="bK7-DV-vfU"/>
+                                    <segue destination="fxF-Y0-3MD" kind="show" identifier="TeamTableView" id="lHq-Zn-kfV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,51 +65,42 @@
             <point key="canvasLocation" x="1825" y="-909"/>
         </scene>
         <!--Teams-->
-        <scene sceneID="CxM-nS-Eg5">
+        <scene sceneID="3Hd-wT-jJ8">
             <objects>
-                <viewController id="bzn-Hk-0Ry" customClass="TeamsTableViewController" customModule="NorthwestKc" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mig-8X-7Pk">
+                <tableViewController id="fxF-Y0-3MD" customClass="TeamsTableViewController" customModule="NorthwestKc" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bph-NU-y7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xiL-zc-Rgg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Teams" id="udU-aq-TSv">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="udU-aq-TSv" id="GpY-xE-9M7">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="hvE-kl-3ew" kind="show" id="tLf-aK-2vH"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="bzn-Hk-0Ry" id="jyO-5s-ZFf"/>
-                                    <outlet property="delegate" destination="bzn-Hk-0Ry" id="wCR-3T-ugc"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GKe-ad-cqB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Teams" id="AVI-Ao-8bg">
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="Byq-aM-lOv">
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="teams" id="ERf-TM-uxe">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ERf-TM-uxe" id="6gG-WP-LVv">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="hvE-kl-3ew" kind="show" identifier="StudentView" id="kl7-R0-GTT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fxF-Y0-3MD" id="o6d-Mg-5ki"/>
+                            <outlet property="delegate" destination="fxF-Y0-3MD" id="HrP-1e-qqJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Teams" id="WM0-k1-P8e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="L7l-oA-GW1">
                             <connections>
-                                <segue destination="Rxn-Dd-66C" kind="presentation" id="R3r-fL-m6l"/>
+                                <segue destination="Rxn-Dd-66C" kind="presentation" identifier="NewTeamView" id="mav-BG-nRT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vzB-qX-uqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEP-GN-hxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2613.5999999999999" y="-904.49775112443785"/>
+            <point key="canvasLocation" x="2595" y="-907"/>
         </scene>
         <!--Title-->
         <scene sceneID="H1l-dB-Lfc">

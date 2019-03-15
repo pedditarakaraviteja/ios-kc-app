@@ -49,10 +49,9 @@ class SchoolsTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        if(segue.identifier == "TeamTableViewController"){
-            let schoolsDVC = segue.destination as! TeamsTableViewController
-            // Pass the selected object to the new view controller.
-            schoolsDVC.school = Schools.shared[tableView.indexPathForSelectedRow!.row]
+        if segue.identifier == "TeamTableView" {
+            let schoolsTVC = segue.destination as! TeamsTableViewController
+            schoolsTVC.school = Schools.shared[tableView.indexPathForSelectedRow!.row]
         }
     }
     
@@ -66,12 +65,13 @@ class SchoolsTableViewController: UITableViewController {
      */
     
     
-    // Override to support editing the table view.
+//     Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
             Schools.shared.delete(school: Schools.shared[indexPath.row])
+           
             tableView.reloadData()
+            
         }
     }
     

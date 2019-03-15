@@ -10,7 +10,7 @@ import UIKit
 
 class StudentsViewController: UIViewController {
 
-    var students:Team?
+    var team:Team!
     
     
     
@@ -26,10 +26,10 @@ class StudentsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        student0LBL.text = students?.students[0]
-        student1LBL.text = students?.students[1]
-        student2LBL.text = students?.students[2]
-        
+        student0LBL.text = team?.students[0]
+        student1LBL.text = team?.students[1]
+        student2LBL.text = team?.students[2]
+         navigationItem.title = team.name
         // Do any additional setup after loading the view.
     }
     

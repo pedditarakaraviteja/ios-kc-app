@@ -28,7 +28,7 @@ class NewTeamViewController: UIViewController {
     
     @IBAction func cancelBTN(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }//end of cancelBTN method
+    }
     
     @IBAction func doneBTN(_ sender: Any) {
         let team = Team(name: teamNameTF.text!, students:[student0TF.text!,student1TF.text!,student2TF.text!])
@@ -37,23 +37,20 @@ class NewTeamViewController: UIViewController {
             school.addTeam(name: team.name, students: team.students)
             self.dismiss(animated: true, completion: nil)
         }else{
+            
             displayMessage()
         }
-    }//end of doneBTN method
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
     
     func displayMessage(){
         let alert = UIAlertController(title: "Warning",
-                                      message: "You need to input TeamName and atleast one StudentName",
+                                      message: "You need to input student name",
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default,
                                       handler: nil))
         self.present(alert, animated: true, completion: nil)
-        
+
     }
     
     
